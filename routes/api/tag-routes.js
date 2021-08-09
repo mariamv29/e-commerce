@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
       {
         model: Product,
         attributes: ["id", "product_name", "price", "stock", "category_id"],
-        through: Product
+        through: ProductTag,
       },
     ],
   })
@@ -30,6 +30,11 @@ router.get("/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
+    include: [
+      {
+        model: this.propfind
+      }
+    ]
   })
     // be sure to include its associated Product data
     .then((dbTagData) => {
@@ -49,6 +54,13 @@ router.post("/", (req, res) => {
   // create a new tag
   Tag.create({
     tag_name: req.body.tag_name,
+    include: [
+    {
+      model: Product,
+      attributes: ["id", "product_name", "price", "stock", "category_id"],
+      through: ProductTag,
+    },
+  ]
   })
     .then((dbTagData) => res.json(dbTagData))
     .catch((err) => {
