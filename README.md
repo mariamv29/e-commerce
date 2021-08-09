@@ -1,9 +1,12 @@
 # e-commerce
 
 ## Description 
+e-commerce is a back end site. Takes a working Express.js API and Sequelize with a MYSQL database. 
 
+![screenshot](./assets/screenshot.jpg)
 
-![screenshot](./assets/video/screenrecording.gif)
+### Full Movie
+[movie](v)
 
 ## User Story
 
@@ -30,11 +33,6 @@ THEN I am able to successfully create, update, and delete data in my database
 ```
 
 
-### Full movie
-[movie]()
-
-
-
 ## Table of Contents (Optional)
 
 If your README is very long, add a table of contents to make it easy for users to find what they need.
@@ -47,18 +45,19 @@ If your README is very long, add a table of contents to make it easy for users t
 
 ## Installation
 
-`npm install` >
-`npm inqurer` 
+`npm i mysql` >
+`npm i sequelize` >
+`npm i dotenv`
 
 
 
 ## Usage 
 
 To use the 
-1. Ope
-2. In
-3. Answer 
-
+1. Open the terminal 
+2. Run `npm start`
+3. Open Insomnia 
+4. Run the different URL request for GET, POST, PUT, DELETE with the respective end points. 
 
 
 ---

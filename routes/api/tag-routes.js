@@ -54,13 +54,6 @@ router.post("/", (req, res) => {
   // create a new tag
   Tag.create({
     tag_name: req.body.tag_name,
-    include: [
-    {
-      model: Product,
-      attributes: ["id", "product_name", "price", "stock", "category_id"],
-      through: ProductTag,
-    },
-  ]
   })
     .then((dbTagData) => res.json(dbTagData))
     .catch((err) => {
