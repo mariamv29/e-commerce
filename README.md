@@ -1,6 +1,6 @@
 # e-commerce
 
-## Description 
+## Description
 e-commerce is a back end site. Takes a working Express.js API and Sequelize with a MYSQL database. 
 The site is ran through Insomnia. When running `npm start`, Insomina takes different server resquest for each model. Each model has different routes to GET, POST, PUT, DELETE data.
 
@@ -75,3 +75,5 @@ To use the
 ## Contributing / Credits
 
 [mariamv29](https://github.com/mariamv29/README-generator.git)
+
+
